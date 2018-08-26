@@ -1,0 +1,11 @@
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\bin\Debug\netcoreapp2.1\1A-TheatreSquare.deps.json
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\bin\Debug\netcoreapp2.1\1A-TheatreSquare.runtimeconfig.json
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\bin\Debug\netcoreapp2.1\1A-TheatreSquare.runtimeconfig.dev.json
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\bin\Debug\netcoreapp2.1\1A-TheatreSquare.dll
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\bin\Debug\netcoreapp2.1\1A-TheatreSquare.pdb
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\obj\Debug\netcoreapp2.1\1A-TheatreSquare.csprojAssemblyReference.cache
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\obj\Debug\netcoreapp2.1\1A-TheatreSquare.csproj.CoreCompileInputs.cache
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\obj\Debug\netcoreapp2.1\1A-TheatreSquare.AssemblyInfoInputs.cache
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\obj\Debug\netcoreapp2.1\1A-TheatreSquare.AssemblyInfo.cs
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\obj\Debug\netcoreapp2.1\1A-TheatreSquare.dll
+C:\Users\yamag\Desktop\codeforces exercices\1A-TheatreSquare\obj\Debug\netcoreapp2.1\1A-TheatreSquare.pdb
