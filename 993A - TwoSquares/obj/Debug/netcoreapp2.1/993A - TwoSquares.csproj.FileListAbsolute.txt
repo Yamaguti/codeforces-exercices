@@ -1,0 +1,11 @@
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\bin\Debug\netcoreapp2.1\993A - TwoSquares.deps.json
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\bin\Debug\netcoreapp2.1\993A - TwoSquares.runtimeconfig.json
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\bin\Debug\netcoreapp2.1\993A - TwoSquares.runtimeconfig.dev.json
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\bin\Debug\netcoreapp2.1\993A - TwoSquares.dll
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\bin\Debug\netcoreapp2.1\993A - TwoSquares.pdb
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\obj\Debug\netcoreapp2.1\993A - TwoSquares.csprojAssemblyReference.cache
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\obj\Debug\netcoreapp2.1\993A - TwoSquares.csproj.CoreCompileInputs.cache
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\obj\Debug\netcoreapp2.1\993A - TwoSquares.AssemblyInfoInputs.cache
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\obj\Debug\netcoreapp2.1\993A - TwoSquares.AssemblyInfo.cs
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\obj\Debug\netcoreapp2.1\993A - TwoSquares.dll
+C:\Users\yamag\Desktop\codeforces exercices\993A - TwoSquares\obj\Debug\netcoreapp2.1\993A - TwoSquares.pdb
