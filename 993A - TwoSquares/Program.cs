@@ -25,10 +25,7 @@ namespace _993A___TwoSquares
     }
 
     class Square {
-        public Point p0;
-        public Point p1;
-        public Point p2;
-        public Point p3;
+        public Point p0, p1, p2, p3;
         
         public Square(double x0, double y0, double x1, double y1, double x2, double y2, double x3, double y3) {
             p0 = new Point(x0, y0);
@@ -52,58 +49,35 @@ namespace _993A___TwoSquares
             );
         }
 
+        // Does any of my square's vertexes intersects a triangle v0, v1, v2?
         public Boolean doesSquareHaveAPointInsideTriangle(Point v0, Point v1, Point v2) {
-            if (this.p0.IsPointInsideTriange(v0, v1, v2) || this.p1.IsPointInsideTriange(v0, v1, v2) || this.p2.IsPointInsideTriange(v0, v1, v2) || this.p3.IsPointInsideTriange(v0, v1, v2)){
-                return true;
-            } else {
-                return false;
-            }
+            if (this.p0.IsPointInsideTriange(v0, v1, v2) || this.p1.IsPointInsideTriange(v0, v1, v2) || this.p2.IsPointInsideTriange(v0, v1, v2) || this.p3.IsPointInsideTriange(v0, v1, v2))
+                return true; 
+            return false;
         }
 
         // Let us consider a square as two triangles with no intersection. This method checks for each of these triangles if the other square has a vertex inside it.
         // It then swaps one square for the other and repeat the test. This is relevant because the check for intersections happens only at vertexes.
         public Boolean DoesItIntersects(Square other) {
-            Point v0, v1, v2;
-
             // first triangle check
-            v0 = this.p0;
-            v1 = this.p1;
-            v2 = this.p2;
-            
-            if (other.doesSquareHaveAPointInsideTriangle(v0, v1, v2)) {
+            if (other.doesSquareHaveAPointInsideTriangle(this.p0, this.p1, this.p2))
                 return true;
-            }
 
             // second triangle check
-            v0 = this.p2;
-            v1 = this.p3;
-            v2 = this.p0;
-
-            if (other.doesSquareHaveAPointInsideTriangle(v0, v1, v2)) {
+            if (other.doesSquareHaveAPointInsideTriangle(this.p2, this.p3, this.p0))
                 return true;
-            }
 
             // first triangle check, swapped
-            v0 = other.p0;
-            v1 = other.p1;
-            v2 = other.p2;
-            
-            if (this.doesSquareHaveAPointInsideTriangle(v0, v1, v2)) {
+            if (this.doesSquareHaveAPointInsideTriangle(other.p0, other.p1, other.p2))
                 return true;
-            }
 
             // second triangle check, swapped
-            v0 = other.p2;
-            v1 = other.p3;
-            v2 = other.p0;
-
-            if (this.doesSquareHaveAPointInsideTriangle(v0, v1, v2)) {
+            if (this.doesSquareHaveAPointInsideTriangle(other.p2, other.p3, other.p0))
                 return true;
-            }
 
             return false;
         }
-    };
+    }
 
     class Program
     {
@@ -116,7 +90,7 @@ namespace _993A___TwoSquares
                 Console.WriteLine("Yes");
             } else {
                 Console.WriteLine("No");
-            }            
+            }
         }
     }
 }
