@@ -22,6 +22,7 @@ namespace _993A___TwoSquares
             b3 = this.signOnHalfPlane(p2, p0) < 0;
 
             return ((b1 == b2) && (b2 == b3));
+        }
     }
 
     class Square {
