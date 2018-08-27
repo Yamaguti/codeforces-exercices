@@ -2,62 +2,60 @@
 
 namespace _993A___TwoSquares
 {
-    class Line {
-        public int x0;
-        public int y0;
-        public int x1;
-        public int y1;
-        
-        public Line(int x0, int y0, int x1, int y1) {
-            this.x0 = x0;
-            this.y0 = y0;
+    class Point {
+        public double x, y;
 
-            this.x1 = x1;
-            this.y1 = y1;
+        public Point(double x, double y) {
+            this.x = x;
+            this.y = y;
         }
+
+        private Double signOnHalfPlane(Point p0, Point p1) {
+            return (this.x - p1.x) * (p0.y - p1.y) - (p0.x - p1.x) * (this.y - p1.y);
+        }
+
+        public Boolean PointInsideTriange(Point p0, Point p1, Point p2) {
+            Boolean b1, b2, b3;
+
+            b1 = this.signOnHalfPlane(p0, p1) < 0;
+            b2 = this.signOnHalfPlane(p1, p2) < 0;
+            b3 = this.signOnHalfPlane(p2, p0) < 0;
+
+            return ((b1 == b2) && (b2 == b3));
     }
 
     class Square {
-        public Line l0;
-        public Line l1;
-        public Line l2;
-        public Line l3;
-        public Line da;
-        public Line db;
-
+        public Point p0;
+        public Point p1;
+        public Point p2;
+        public Point p3;
+        
         // Constructor
-        public Square(int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3) {
-            l0 = new Line(x0, y0, x1, y1);
-            l1 = new Line(x1, y1, x2, y2);
-            da = new Line(x1, y0, x0, y0);
-
-            
-            l2 = new Line(x2, y2, x3, y3);
-            l3 = new Line(x3, y3, x0, y0);
-            db = new Line(x0, y0, x2, y2);
-        }
-
-        public void print() {
-            Console.WriteLine("aa");
-        }
-
-        public Boolean DoesItIntersects(Square other) {
-            
+        public Square(double x0, double y0, double x1, double y1, double x2, double y2, double x3, double y3) {
+            p0 = new Point(x0, y0);
+            p1 = new Point(x1, y1);
+            p2 = new Point(x2, y2);
+            p3 = new Point(x3, y3);
         }
 
         public static Square newSquareFromInput()
         {
             string[] tokens = Console.ReadLine().Split();
             return new Square(
-                int.Parse(tokens[0]),
-                int.Parse(tokens[1]),
-                int.Parse(tokens[2]),
-                int.Parse(tokens[3]),
-                int.Parse(tokens[4]),
-                int.Parse(tokens[5]),
-                int.Parse(tokens[6]),
-                int.Parse(tokens[7])
+                double.Parse(tokens[0]),
+                double.Parse(tokens[1]),
+                double.Parse(tokens[2]),
+                double.Parse(tokens[3]),
+                double.Parse(tokens[4]),
+                double.Parse(tokens[5]),
+                double.Parse(tokens[6]),
+                double.Parse(tokens[7])
             );
+        }
+
+        public Boolean DoesItIntersects(Square other) {
+            
+            
         }
     };
 
